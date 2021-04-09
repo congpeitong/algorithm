@@ -3,7 +3,7 @@ package malehunter.dataStructure.Sort;
 
 /**
  * @ClassName QuickSort
- * @Description 快速排序
+ * @Description 快速排序  轴  小的放左边，大的放右边
  * @Autor MaleHunter
  * @Date 2021-03-29 16:59
  * @Version 1.0
