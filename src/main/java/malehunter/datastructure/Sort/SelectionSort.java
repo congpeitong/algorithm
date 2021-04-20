@@ -1,6 +1,4 @@
-package malehunter.dataStructure.Sort;
-
-import sun.rmi.server.MarshalInputStream;
+package malehunter.datastructure.Sort;
 
 /**
  * @ClassName SelectionSort

@@ -1,13 +1,13 @@
-package malehunter.dataStructure.Sort;
+package malehunter.datastructure.Sort;
 
 /**
- * @ClassName InsertSort
- * @Description 插入法排序
+ * @ClassName ShellSort
+ * @Description 希尔排序
  * @Autor MaleHunter
- * @Date 2021-03-26 15:28
+ * @Date 2021-03-29 10:17
  * @Version 1.0
  */
-public class InsertSort {
+public class ShellSort {
     public static void main(String[] args) {
         int[] arrs = {5,3,6,8,1,7,9,4,2,12,23,232,123};
         sort(arrs);
@@ -15,15 +15,24 @@ public class InsertSort {
 
     }
     static void sort(int[] arrs){
-        for (int i = 1; i < arrs.length; i++) {
-            for (int j = i; j>0; j--){
-                if (arrs[j] < arrs[j-1]){
-                    swap(arrs,j,j-1);
+        // 排序间隔
+        //int gap =4;
+        int h = 1;
+        while ( h <= arrs.length / 3) {
+            h = h*3 + 1;
+        }
+        for (int gap = h; gap > 0 ; gap = (gap-1)/3){
+            for (int i = gap; i < arrs.length; i++) {
+                for (int j = i; j>gap - 1; j -= gap){
+                    if (arrs[j] < arrs[j-gap]){
+                        swap(arrs,j,j - gap);
+                    }
                 }
             }
-        }
 
+        }
     }
+
     // 交换
     static void swap(int [] arrs, int i, int j){
         arrs[i] = arrs[i] + arrs[j];

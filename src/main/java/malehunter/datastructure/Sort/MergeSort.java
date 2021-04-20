@@ -1,4 +1,4 @@
-package malehunter.dataStructure.Sort;
+package malehunter.datastructure.Sort;
 
 /**
  * @ClassName MergeSort
