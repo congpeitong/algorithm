@@ -1,7 +1,10 @@
 package malehunter.datastructure.leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collector;
 
 /**
  * @createUser： congpeitong
@@ -95,8 +98,32 @@ public class LeetCodeNode {
     /**
      * 3. 数据结构Array数组知识点：
      *    在  连续  的内存空间中，存储一组  相同类型   的元素
-     *
+     *    访问  时间复杂度 O(1)
+     *    搜索  时间复杂度 O(N)
+     *    插入  时间复杂度 O(N)
+     *    删除  时间复杂度 O(N)
+     *    数组的特点： 适合读，不适合写，使用场景读多写少
      */
+
+    public static void createArray() {
+        /**
+         * 创建数组四种方式
+         */
+        int[] array1 = {1,2,3,4};
+        // array1[5] = 4; ArrayIndexOutOfBoundsException
+
+        System.out.println();
+        int[] array2 = new int[]{1,2,3,4,5};
+        int[] ayyay3 = new int[5];
+        ArrayList<Integer> array4 = new ArrayList<>();
+
+    }
+
+    public static void main(String[] args) {
+        createArray();
+
+    }
+
 
 
 
