@@ -3,7 +3,7 @@ package malehunter.datastructure.leetcode;
 /**
  * @createUser： congpeitong
  * @createTime： 2022/2/17
- * @describe： 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+ * @describe： 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。必须在原数组上操作
  */
 public class LeetCode283 {
     public static void moveZeroes(int[] nums) {
