@@ -7,26 +7,17 @@ package malehunter.datastructure.leetcode;
  */
 
 public class LeetCode206 {
+    // 迭代
     public static ListNode reverseList1(ListNode head) {
         ListNode curr = head;
+        ListNode dummy = null;
         while (curr != null) {
             ListNode next = curr.next;
-            curr.next = head;
-            head = curr;
+            curr.next = dummy;
+            dummy = curr;
             curr = next;
         }
-        return head;
-    }
-    public ListNode reverseList2(ListNode head) {
-       ListNode prev = null;
-       ListNode curr = head;
-       while(curr != null) {
-           ListNode next = curr.next;
-           curr.next = prev;
-           prev = curr;
-           curr = next;
-       }
-       return prev;
+        return dummy;
     }
 
     public static void main(String[] args) {
