@@ -41,7 +41,7 @@ public class LeetCode206 {
         head2.next = head3;
         head3.next = head4;
         head4.next = head5;
-        ListNode listNode = reverseList1(head1);
-        System.out.println(listNode);
+        ListNode listNode = reverseList2(head1);
+        System.out.println(listNode.val);
     }
 }
