@@ -1,15 +1,16 @@
 package malehunter.datastructure.leetcode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collector;
 
 /**
  * @createUser： congpeitong
  * @createTime： 2022/2/17
  * @describe：
+ * 当业务逻辑符合以下三个条件的时候，就可以考虑使用递归来实现：
+ *  1. 一个问题可以分解为多个子问题。
+ *  2. 当前问题与其子问题除了数据规模不一样之外，求解思路完全一样。
+ *  3. 存在递归的终止条件。
  */
 public class LeetCodeNode {
     /**
