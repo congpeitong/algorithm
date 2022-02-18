@@ -20,6 +20,17 @@ public class LeetCode206 {
         return dummy;
     }
 
+    // 递归
+    public static ListNode reverseList2(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode listNode = reverseList2(head.next);
+        head.next.next = head;
+        head.next = null;
+        return listNode;
+    }
+
     public static void main(String[] args) {
         ListNode head1 = new ListNode(1);
         ListNode head2 = new ListNode(2);
