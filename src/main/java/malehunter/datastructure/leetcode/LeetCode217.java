@@ -15,11 +15,6 @@ public class LeetCode217 {
             if (!map.containsKey(num)) {
                 map.put(num,1);
             } else {
-               map.put(num,map.get(num) + 1);
-            }
-        }
-        for (Integer value: map.values()) {
-            if (value>1) {
                 return true;
             }
         }
@@ -27,11 +22,10 @@ public class LeetCode217 {
     }
     public boolean containsDuplicate1(int[] nums) {
         Arrays.sort(nums);
-        for (int i = 0; i < nums.length; i++) {
-            if (i < nums.length-1) {
-                if (nums[i] == nums[i+1]) {
-                    return true;
-                }
+        int n = nums.length;
+        for (int i = 0; i < n-1; i++) {
+            if (nums[i] == nums[i+1]) {
+                return true;
             }
         }
         return false;
