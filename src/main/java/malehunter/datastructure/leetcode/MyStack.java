@@ -7,7 +7,7 @@ package malehunter.datastructure.leetcode;
  * @date 2022-02-28 12:35
  * Version 1.0
  */
-public class Stack {
+public class MyStack {
     /**
      * 特点： 先进后出
      */

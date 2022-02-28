@@ -4,7 +4,7 @@ package malehunter.datastructure.leetcode;
  * @createTime： 2022/2/17
  * @describe： 链表（元素域，指针域） 单端链表，双单链表  使用场景：读少写多
  */
-public class LinkedList {
+public class MyLinkedList {
     /**
      * 1. 访问 O(N)  慢
      * 2. 搜索 O(N)  慢

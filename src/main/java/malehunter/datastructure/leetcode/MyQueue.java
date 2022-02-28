@@ -7,7 +7,7 @@ import java.util.LinkedList;
  * @createTime： 2022/2/18
  * @describe： 队列知识点
  */
-public class Queue {
+public class MyQueue {
     /**
      * 特点：和按顺序排队一个概念，先到先得先入先出
      *      一端入队，一端出队
