@@ -2,6 +2,7 @@ package malehunter.datastructure.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * @author congpeitong
@@ -27,6 +28,23 @@ public class LeetCode217 {
             if (nums[i] == nums[i+1]) {
                 return true;
             }
+        }
+        return false;
+    }
+
+    /**
+     * hashSet元素不重复特性
+     * @param nums
+     * @return
+     */
+    public boolean containsDuplicate2(int[] nums) {
+        HashSet<Integer> hashSet = new HashSet<>();
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            hashSet.add(nums[i]);
+        }
+        if (hashSet.size() < n) {
+            return true;
         }
         return false;
     }
